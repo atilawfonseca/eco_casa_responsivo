@@ -1,0 +1,82 @@
+#contato {
+    background-color: var(--background-cor-o-q-buscamos);
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#contato >.container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-around;
+    transition: 1s;
+}
+#contato h2 {
+    color: white;
+    width: 100%;
+}
+#contato form {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 2em;
+    display: flex;
+    gap: .5em;
+    flex-direction: column;
+    max-width: 500px;
+    transition: 1s;
+    
+    
+    
+}
+#contato form div {
+    height: 60px;
+    box-sizing: border-box;
+
+}
+#contato form input{
+    box-sizing: border-box;
+    padding: 8px 24px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 4px;
+    
+}
+#contato form textarea {
+    box-sizing: border-box;
+    height: 200px;
+    padding: 16px;
+    width: 100%;
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#contato form .button:hover {
+    cursor: grab;
+    font-weight: 600;
+}
+
+#contato address {
+    margin-top: 2em;
+    align-self: center;
+    color: white;
+    font-size: 1.2em;
+    max-width: 500px;
+    line-height: 1.5em;
+}
+.error{
+    display: block;
+    color: rgb(255, 171, 171);
+}
+@media screen and (min-width:901px) {
+    #contato > .container {
+        justify-content: space-between;
+    }
+    #contato form {
+        max-width: 450px;
+    }
+    #contato address {
+        max-width: 320px;
+    }
+}

@@ -1,0 +1,32 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(aba_lateral.css);
+@import url(quem_somos.css);
+@import url(o_q_buscamos.css);
+@import url(modelos.css);
+@import url(contato.css);
+@import url(footer.css);
+
+:root {
+    --color-background-header-initial: rgba(31, 30, 30, 0.9);
+    --color-background-header-final: rgba(26, 25, 25, 0.6);
+    --color-menu-barra-superior: #222F33;
+    --color-active: #48626a;
+    --background-cor-o-q-buscamos: #33474d;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90vw;
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}

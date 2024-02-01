@@ -1,0 +1,91 @@
+header {
+    background: linear-gradient( var(--color-background-header-initial), var(--color-background-header-final)), url("./../img/eco_casa.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    box-sizing: border-box;
+    color: white;
+    margin-bottom: 2em;
+}
+.menu-lg {
+    display: none;
+}
+.slogan {
+    font-size: 2em;
+    align-self: center;
+    padding-top: 8em;
+    line-height: 1.5em;
+    padding-left:  1.5em;
+    max-width: 70%;
+    width: 50%;
+}
+.menu-barra-superior {
+    background-color: var(--color-menu-barra-superior);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    position: fixed;
+    width: 100vw;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.5s;
+}
+.menu-barra-superior .container, .menu-barra-superior .container h1 {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+.menu-barra-superior .container {
+    justify-content: space-between;
+}
+.hamburguer {
+    padding: 0.4em;
+}
+.hamburguer span {
+    display: block;
+    width: 35px;
+    margin-bottom: 6px;
+    height: 4px;
+    background-color: white;
+}
+.hamburguer:active {
+    background-color: var(--color-active);
+    
+}
+
+@media screen and (min-width:650px) {
+    .menu-barra-superior {
+        background-color: transparent;
+        padding: 1em 0px;
+        position: static;
+    }
+    .hamburguer {
+        display: none;
+    }
+    .menu-lg {
+        display: inline;
+    }
+    .menu-lg ul li {
+        list-style: none;
+        display: inline;
+    }
+    .menu-lg ul li a {
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+        text-decoration: none;
+        color: white;
+        margin-left: .75em;
+        text-transform: uppercase;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+    }
+    .slogan {
+        padding-top: 6em;
+        font-size: 2.2em;
+    }
+    header h1{
+        font-size: 1.2em;
+    }
+    header h1 img {
+        width: 1.5em;
+    }
+}

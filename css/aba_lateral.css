@@ -1,0 +1,32 @@
+.aba-lateral {
+    background-color: var(--color-menu-barra-superior);
+    box-sizing: border-box;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 90%;
+    top: 58px;
+    left: 0px;
+    position: fixed;
+    transition: 1s;
+}
+.colher-aba-lateral {
+    left: -90%;
+}
+.aba-lateral nav {
+    height: 40vh;
+}
+.aba-lateral nav ul li {
+    list-style: none;
+    padding: 1em 2em;
+}
+.aba-lateral nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+.aba-lateral nav ul li:active {
+    background-color: var(--color-active);
+}
